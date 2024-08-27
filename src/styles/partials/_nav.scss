@@ -1,6 +1,5 @@
 nav {
   display: flex;
-  border: 1px white solid;
 
   ul {
     list-style: none;
@@ -9,7 +8,7 @@ nav {
     gap: 57px;
     a {
       text-decoration: none;
-      color: white;
+      color: black;
 
       &:hover {
         text-decoration: underline;

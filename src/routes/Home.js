@@ -1,15 +1,11 @@
 import "../styles/main.scss";
-import Header from "../components/Header";
-import Banner from "../components/Banner";
-import CardContainer from "../components/CardContainer";
 import Footer from "../components/Footer";
+import Content from "../components/Content";
 
 function Home() {
   return (
     <>
-      <Header />
-      <Banner />
-      <CardContainer />
+      <Content />
       <Footer />
     </>
   );

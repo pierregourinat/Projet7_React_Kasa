@@ -4,15 +4,21 @@
 @import "partials/nav";
 @import "partials/banner";
 @import "partials/cardContainer";
+@import "partials/404";
+@import "partials/content";
+
+html {
+  padding: 0;
+  margin: 0;
+}
 
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1c1c1c;
-  color: white;
-  padding: 45px 100px 45px;
+  background-color: white;
+  color: black;
 }
 
 code {
