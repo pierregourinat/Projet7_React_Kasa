@@ -10,7 +10,12 @@ function CardContainer() {
   return (
     <div className="cardContainer">
       {displayLogements.map((logement) => (
-        <Card key={logement.id} title={logement.title} image={logement.cover} />
+        <Card
+          key={logement.id}
+          title={logement.title}
+          image={logement.cover}
+          id={logement.id}
+        />
       ))}
     </div>
   );

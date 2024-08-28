@@ -6,6 +6,7 @@ import ErrorPage from "./routes/ErrorPage";
 import About from "./routes/About";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import LogementDetail from "./components/LogementDetail";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "about",
     element: <About />,
+  },
+  {
+    path: "/logement/:id",
+    element: <LogementDetail />,
   },
   {
     path: "errorPage",
