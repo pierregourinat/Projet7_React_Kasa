@@ -1,3 +1,10 @@
 .logementDetail {
   padding: 45px 100px 45px;
+  display: flex;
+  flex-direction: column;
+
+  .logementContainer {
+    display: flex;
+    justify-content: space-between;
+  }
 }
