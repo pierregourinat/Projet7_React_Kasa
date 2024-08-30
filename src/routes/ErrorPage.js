@@ -1,4 +1,4 @@
-import { useRouteError } from "react-router-dom";
+import { Link, useRouteError } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -14,6 +14,7 @@ function ErrorPage() {
         <div className="errorText">
           <h1>Oups! La page que vous demandez n'existe pas.</h1>
         </div>
+        <Link to="/">Retourner sur la page d'accueil</Link>
       </div>
       <Footer />
     </div>

@@ -1,0 +1,15 @@
+.tags {
+  display: flex;
+  gap: 15px;
+
+  .tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: #ff6060;
+    color: white;
+  }
+}

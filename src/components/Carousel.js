@@ -13,13 +13,17 @@ function Carousel({ images }) {
 
   return (
     <div className="carousel">
-      <button className="carouselBtn Left" onClick={prevSlide}>
-        <img src="../arrow-left.png" alt="Previous" />
-      </button>
+      {images.length > 1 && (
+        <button className="carouselBtn Left" onClick={prevSlide}>
+          <img src="../arrow-left.png" alt="Previous" />
+        </button>
+      )}
       <img src={images[currentIndex]} alt="Carousel" className="carouselImg" />
-      <button className="carouselBtn Right" onClick={nextSlide}>
-        <img src="../arrow-right.png" alt="Next" />
-      </button>
+      {images.length > 1 && (
+        <button className="carouselBtn Right" onClick={nextSlide}>
+          <img src="../arrow-right.png" alt="Next" />
+        </button>
+      )}
     </div>
   );
 }
