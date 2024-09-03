@@ -6,26 +6,34 @@ import ErrorPage from "./routes/ErrorPage";
 import About from "./routes/About";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import LogementDetail from "./components/LogementDetail";
+import LogementDetail from "./routes/LogementDetail";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Home />,
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: "about",
+      element: <About />,
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: "/logement/:id",
+      element: <LogementDetail />,
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: "*",
+      element: <ErrorPage />,
+    },
+  ],
   {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "about",
-    element: <About />,
-  },
-  {
-    path: "/logement/:id",
-    element: <LogementDetail />,
-  },
-  {
-    path: "errorPage",
-    element: <ErrorPage />,
-  },
-]);
+    basename: "/",
+  }
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

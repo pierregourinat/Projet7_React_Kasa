@@ -1,11 +1,18 @@
 .logementDetail {
-  padding: 45px 100px 45px;
   display: flex;
   flex-direction: column;
+  margin: 45px 100px 0;
 
   .logementContainer {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+
+    .container1,
+    .container2 {
+      display: flex;
+      justify-content: space-between;
+    }
 
     .hostInfo {
       position: relative;
@@ -15,7 +22,7 @@
     }
 
     p {
-      white-space: nowrap;
+      width: 80px;
     }
 
     img {
@@ -25,9 +32,14 @@
     }
 
     .rating {
-      position: absolute;
-      bottom: 0;
-      right: 3px;
+      display: flex;
+      gap: 5px;
     }
+  }
+  .dropdownWrapper {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }

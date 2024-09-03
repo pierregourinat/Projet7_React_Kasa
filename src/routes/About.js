@@ -32,10 +32,11 @@ function About() {
     <>
       <Header />
       <Banner />
-
-      {aboutList.map((item, index) => (
-        <Dropdown key={index} title={item.title} content={item.content} />
-      ))}
+      <div className="dropdownContainer">
+        {aboutList.map((item, index) => (
+          <Dropdown key={index} title={item.title} content={item.content} />
+        ))}
+      </div>
       <Footer />
     </>
   );

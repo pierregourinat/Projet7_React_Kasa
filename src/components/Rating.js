@@ -1,14 +1,21 @@
-function Rating({ rating }) {
-  const stars = [];
-  for (let i = 0; i < 5; i++) {
-    stars.push(
-      <span key={i} className={i < rating ? "star filler" : "star"}>
-        ★
-      </span>
-    );
-  }
+import React from "react";
+import { Star } from "lucide-react";
 
-  return <div className="rating"> {stars} </div>;
+function Rating({ rating }) {
+  const totalStars = 5;
+
+  return (
+    <div className="rating">
+      {[...Array(totalStars)].map((_, index) => (
+        <Star
+          key={index}
+          fill={index < rating ? "#FF6060" : "#E3E3E3"}
+          stroke={index < rating ? "#FF6060" : "#E3E3E3"}
+          size={24}
+        />
+      ))}
+    </div>
+  );
 }
 
 export default Rating;

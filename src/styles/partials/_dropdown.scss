@@ -1,21 +1,25 @@
 .dropdown {
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
+  width: 100%;
 
-  h3 {
+  .dropdownHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #ff6060;
     color: white;
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin: 0;
+    border: transparent;
+    border-radius: 10px;
 
     &:hover {
       background-color: #cc4c4c;
     }
   }
-
   p {
     background-color: #f6f6f673;
     color: black;

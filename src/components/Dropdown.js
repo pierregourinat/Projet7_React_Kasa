@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ChevronUp, ChevronDown } from "lucide-react";
 
 function Dropdown({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,9 +10,20 @@ function Dropdown({ title, content }) {
 
   return (
     <div className="dropdown">
-      <h3 onClick={toggleDropdown}> {title} </h3>
-      {/* <FontAwesomeIcon icon={faChevronUp} /> */}
-      {isOpen && <p> {content} </p>}
+      <div className="dropdownHeader" onClick={toggleDropdown}>
+        <h3> {title} </h3>
+        {isOpen ? <ChevronUp /> : <ChevronDown />}
+      </div>
+      {isOpen &&
+        (Array.isArray(content) ? (
+          <ul>
+            {content.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>{content}</p>
+        ))}
     </div>
   );
 }
