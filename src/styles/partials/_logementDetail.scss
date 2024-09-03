@@ -6,5 +6,28 @@
   .logementContainer {
     display: flex;
     justify-content: space-between;
+
+    .hostInfo {
+      position: relative;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    p {
+      white-space: nowrap;
+    }
+
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50px;
+    }
+
+    .rating {
+      position: absolute;
+      bottom: 0;
+      right: 3px;
+    }
   }
 }

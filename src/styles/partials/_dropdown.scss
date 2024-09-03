@@ -1,8 +1,7 @@
-.description {
-  background-color: #ff6060;
-  color: white;
+.dropdown {
+  display: flex;
+  flex-direction: column;
   border-radius: 10px;
-  height: 40px;
 
   h3 {
     background-color: #ff6060;

@@ -10,7 +10,7 @@ function Description({ description }) {
   return (
     <div className="description">
       <h3 onClick={toggleDescription}>Description</h3>
-      {isOpen && <p> {description} </p>}
+      {isOpen && <p>{description}</p>}
     </div>
   );
 }
