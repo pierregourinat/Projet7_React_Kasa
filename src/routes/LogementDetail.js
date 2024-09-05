@@ -27,6 +27,9 @@ function LogementDetail() {
               <h2> {logement.title} </h2>
               <h3> {logement.location} </h3>
             </div>
+            <Tags tags={logement.tags} />
+          </div>
+          <div className="container2">
             <div className="hostInfo">
               <p>{logement.host.name}</p>
               <img
@@ -35,9 +38,6 @@ function LogementDetail() {
                 className="hostPicture"
               />
             </div>
-          </div>
-          <div className="container2">
-            <Tags tags={logement.tags} />
             <Rating rating={parseInt(logement.rating)} />
           </div>
         </div>

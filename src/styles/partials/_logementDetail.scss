@@ -2,16 +2,49 @@
   display: flex;
   flex-direction: column;
   margin: 45px 100px 0;
+  width: 100%;
+
+  @include mobile {
+    margin: 20px;
+  }
 
   .logementContainer {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    justify-content: space-between;
+    margin-top: 20px;
 
-    .container1,
+    @include mobile {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .container1 {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      @include mobile {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+
     .container2 {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      gap: 15px;
+
+      @include mobile {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .logementText {
+      flex-direction: column;
+      display: flex;
+      gap: 15px;
     }
 
     .hostInfo {
@@ -38,8 +71,7 @@
   }
   .dropdownWrapper {
     display: flex;
-    gap: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    gap: 80px;
+    margin-top: 25px;
   }
 }
