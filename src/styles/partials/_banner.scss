@@ -1,8 +1,15 @@
 #Banner {
   width: auto;
+  height: 223px;
   border-radius: 15px;
   position: relative;
   margin: 45px 100px 0;
+  overflow: hidden;
+
+  @include mobile {
+    margin: 0 20px;
+    height: 100px;
+  }
 
   h1 {
     position: absolute;
@@ -11,12 +18,19 @@
     transform: translate(-50%, -50%);
     color: white;
     z-index: 1;
+
+    @include mobile {
+      font-size: 18px;
+      max-width: 170px;
+      top: 39%;
+      left: 34%;
+    }
   }
 
   img {
     width: 100%;
-    height: 223px;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     border-radius: 15px;
     filter: brightness(50%);
   }

@@ -4,4 +4,8 @@ header {
   border: 1px white solid;
   justify-content: space-between;
   margin: 45px 100px 0;
+
+  @include mobile {
+    margin: 20px;
+  }
 }

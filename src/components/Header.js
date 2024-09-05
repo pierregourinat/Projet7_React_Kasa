@@ -5,7 +5,7 @@ function Header() {
   return (
     <>
       <header>
-        <Logo width={210} height={68} currentColor="#FF6060" />
+        <Logo width={100} height={40} currentColor="#FF6060" />
         <Nav />
       </header>
     </>
