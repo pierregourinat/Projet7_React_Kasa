@@ -9,13 +9,26 @@
   align-items: center;
   gap: 50px;
 
-  h1 {
-    color: #ff6060;
+  img {
+    width: 100%;
+    height: 260px;
+
+    @include mobile {
+      padding: 0 20px;
+    }
   }
 
-  a {
-    text-decoration: underline;
-    margin-bottom: 40px;
-    color: black;
+  .errorText {
+    text-align: center;
+
+    h1 {
+      color: #ff6060;
+    }
+
+    a {
+      text-decoration: underline;
+      margin-bottom: 40px;
+      color: black;
+    }
   }
 }

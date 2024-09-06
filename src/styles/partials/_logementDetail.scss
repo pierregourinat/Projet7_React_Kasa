@@ -6,6 +6,7 @@
 
   @include mobile {
     margin: 20px;
+    width: auto;
   }
 
   .logementContainer {
@@ -50,7 +51,6 @@
     .hostInfo {
       position: relative;
       display: flex;
-      gap: 10px;
       align-items: center;
     }
 
@@ -73,5 +73,10 @@
     display: flex;
     gap: 80px;
     margin-top: 25px;
+
+    @include mobile {
+      gap: 10px;
+      flex-direction: column;
+    }
   }
 }
