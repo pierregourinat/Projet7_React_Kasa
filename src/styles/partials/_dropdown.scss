@@ -20,6 +20,21 @@
       background-color: #cc4c4c;
     }
   }
+
+  .dropdownContent {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+    transform: translateY(0);
+  }
+
+  .dropdownContent.open {
+    max-height: 100vh;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   p {
     background-color: #f6f6f673;
     color: black;
@@ -33,5 +48,13 @@
   &.open p {
     max-height: 200px;
     transition: all 3s ease-in;
+  }
+
+  .chevron {
+    transition: transform 0.5s ease;
+  }
+
+  .chevron.rotate {
+    transform: rotate(-180deg);
   }
 }
