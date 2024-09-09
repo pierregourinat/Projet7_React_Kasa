@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronUp } from "lucide-react";
 
 function Dropdown({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
