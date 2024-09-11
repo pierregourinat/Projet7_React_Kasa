@@ -31,7 +31,7 @@ function About() {
   return (
     <>
       <Header />
-      <Banner />
+      <Banner imageSrc="./banner-img-about.svg" text="" />
       <div className="dropdownContainer">
         {aboutList.map((item, index) => (
           <Dropdown key={index} title={item.title} content={item.content} />

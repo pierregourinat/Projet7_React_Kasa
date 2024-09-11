@@ -8,7 +8,10 @@ function Home() {
   return (
     <>
       <Header />
-      <Banner />
+      <Banner
+        imageSrc="./homepage-img.svg"
+        text="Chez vous, partout et ailleurs"
+      />
       <CardContainer />
       <Footer />
     </>

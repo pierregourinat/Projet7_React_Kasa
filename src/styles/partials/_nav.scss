@@ -18,7 +18,7 @@ nav {
       text-decoration: none;
       color: black;
 
-      &:hover {
+      &.active {
         text-decoration: underline;
       }
     }
